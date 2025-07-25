@@ -1,0 +1,10 @@
+# What kinda stuff goes in here?
+# Here are some example dependencies, depending on what the project does:
+
+# Package  ------------   Use Case
+# requests  |  Makes web requests super easy
+# pygame    |  For games / interactive visuals
+# colorama  |  Adds fun colors to terminal output
+# dotenv    |  Manages secret keys in .env files
+# flask     |  If I'm building a web app
+# pandas    |  For data analysis or file handling

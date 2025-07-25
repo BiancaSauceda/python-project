@@ -1,0 +1,13 @@
+# Files GitHub should ignore (like __pycache__)
+# The .gitignore file is like a filter that says: "Hey Git, don't track files/folders that fit these patterns."
+# Here’s a typical .gitignore snippet for Python projects:
+__pycache__/
+*.pyc 
+#“Ignore any file that ends in .pyc”—regardless of its name BTW
+# These .pyc files are compiled Python files created when the script runs
+.env
+.vscode/
+
+# So even if __pycache__/ doesn’t exist right now, adding it to .gitignore means:
+# If Python ever generates it during runtime or testing, Git won’t include it in commits.
+# It keeps the repo clean and focused on the files you actually care about!
