@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breezely | Wellness & Productivity ✨</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1 class="title">☁️ Breezely ☁️</h1>
+  <p class="description"><em>Productivity carried on a calm breeze</em></p>
+
+  <div class="date">
+    <div class="calendar">
+      {{ calendar_html | safe }}
+    </div>
+  </div>
+
+  <div class="affs-container">
+    <h2 class="affs-title">Daily Affirmation</h2>
+      <div class="affirmation">
+        {{ quote }}
+      </div>
+  </div>
+    
+  <div class="habit-container">
+    <h2 class="habit-title">Habit tracker</h2>
+
+    <label class="checkbox-wrapper">
+      <input type="checkbox" name="habit1">
+      <span>🌱 Morning Meditation</span>
+    </label>
+
+    <label class="checkbox-wrapper">
+      <input type="checkbox" name="habit2">
+      <span>📚 Read a chapter of a book</span>
+    </label>
+
+    <label class="checkbox-wrapper">
+      <input type="checkbox" name="habit3">
+      <span>📝 Write in journal</span>
+    </label>
+
+    <label class="checkbox-wrapper">
+      <input type="checkbox" name="habit4">
+      <span>🚶‍♂️ Take a walk in nature</span>
+    </label>
+
+    <label class="checkbox-wrapper">
+      <input type="checkbox" name="habit5">
+      <span>💧 Drink 64 oz of water</span>
+    </label>
+  </div>
+
+  <p class="inspirational-quote">"Our greatest glory is not ever falling, but rising every time we fall."</p>
+  <p class="author"><em>- Confucius</em></p>
+</body>
+</html>

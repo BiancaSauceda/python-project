@@ -8,3 +8,4 @@
 # dotenv    |  Manages secret keys in .env files
 # flask     |  If I'm building a web app
 # pandas    |  For data analysis or file handling
+Flask==2.3.2
